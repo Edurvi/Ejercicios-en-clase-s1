@@ -1,0 +1,54 @@
+/*?Declarar variables globales con la etiqueta root*/
+:root {
+  --main-font: sans-serif;
+  --foont-size: 16px;
+  --main-color: #004977;
+  --second-color: #2e1f54;
+  --text-color: #efff;
+  --text-color-inverse: #222;
+  --container-width: 1200px;
+}
+/*?Reseteo de estilos (todas las etiquetas van en un mismo formato para todos los browser)*/
+html {
+  box-sizing: border-box; /*?Tamaño de la caja (la caja tiene borde,margen y padding) cuando*/
+  /*? ponemos esta etiqueta indicamos que el tamaño de la caja no se vera afecto por el */
+  /*?padding,borde y margen*/
+  font-family: var(--main-color);
+  /*?Manera de variable , se pone var() cuando se quiere llamar a una variable y colocarselo a un*/
+  /*?atributo o propiedad*/
+  scroll-behavior: smooth; /*?Aplica una transicion de manera sublime*/
+}
+/*?Pseudo elementos*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /*? todos los elemetnos van a heredar el box sizing*/
+}
+body {
+  margin: 0;
+  box-sizing: inherit;
+  font-size: inherit;
+  overflow-x: hidden;
+  background-color: var(--text-color-inverse);
+}
+img {
+  max-width: 100%; /*( abarca el % de quien lo contenga)*/
+  height: auto; /*Segun suamcho el calcula su propio alto*/
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-inverse);
+}
+li {
+  list-style-type: none; /*?elimina los puntos de listas*/
+}
+h1 {
+  font-size: 50px; /*?Tamaño de los textos*/
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
